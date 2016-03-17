@@ -1,0 +1,11 @@
+{
+  "name": "upsource-notifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Manuel Alabor <manuel@alabor.me>",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.69.0"
+  }
+}
