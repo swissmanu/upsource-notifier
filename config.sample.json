@@ -1,5 +1,7 @@
 {
+  "upSourceUrl": "https://upsource",
   "user": "user",
   "password": "password",
-  "clientCertificate": "/Users/user/certs/user.p12"
+  "clientCertificate": "/Users/user/certs/user.p12",
+  "token": "foobar"
 }
