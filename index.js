@@ -12,6 +12,7 @@ connection.connect()
   .then((connection) => {
     debug('Connected')
     const avatarCache = new AvatarCache(connection)
-    new FeedEventHandler(config, connection, avatarCache)
+    const feedEventHandler = new FeedEventHandler(config, connection, avatarCache)
+    feedEventHandler.start()
   })
   .catch((err) => debug(`Error ${JSON.stringify(err, null, 2)}`))
