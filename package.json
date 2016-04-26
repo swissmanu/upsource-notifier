@@ -4,14 +4,16 @@
   "main": "index.js",
   "author": "Manuel Alabor <manuel@alabor.me>",
   "license": "MIT",
-  "bin": "index.js",
+  "bin": "bin/upsource-notifier",
   "repository": {
     "type": "git",
     "url": "https://github.com/swissmanu/upsource-notifier"
   },
   "dependencies": {
+    "commander": "^2.9.0",
     "debug": "^2.2.0",
     "fs-extra": "^0.26.7",
+    "minimist": "^1.2.0",
     "node-notifier": "^4.5.0",
     "openurl": "^1.1.1",
     "request": "^2.69.0",
