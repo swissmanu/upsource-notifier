@@ -4,7 +4,7 @@
   "main": "index.js",
   "author": "Manuel Alabor <manuel@alabor.me>",
   "license": "MIT",
-  "bin": "bin/upsource-notifier",
+  "bin": "bin/upsource-notifier.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/swissmanu/upsource-notifier"
@@ -21,7 +21,7 @@
     "socketio": "^1.0.0"
   },
   "scripts": {
-    "start": "node --es_staging --harmony_destructuring --harmony_destructuring --harmony_default_parameters index.js",
+    "start": "bin/upsource-notifier.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "engines": {
