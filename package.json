@@ -1,11 +1,14 @@
 {
   "name": "upsource-notifier",
-  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "author": "Manuel Alabor <manuel@alabor.me>",
   "license": "MIT",
   "bin": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swissmanu/upsource-notifier"
+  },
   "dependencies": {
     "debug": "^2.2.0",
     "fs-extra": "^0.26.7",
@@ -16,13 +19,15 @@
     "socketio": "^1.0.0"
   },
   "scripts": {
-    "start": "node --es_staging --harmony_destructuring --harmony_destructuring --harmony_default_parameters index.js"
+    "start": "node --es_staging --harmony_destructuring --harmony_destructuring --harmony_default_parameters index.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "engines": {
     "node": ">5.9.0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^1.1.6"
+    "cz-conventional-changelog": "^1.1.6",
+    "semantic-release": "^4.3.5"
   },
   "config": {
     "commitizen": {
